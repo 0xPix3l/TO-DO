@@ -40,11 +40,6 @@ pip install flask flask-cors werkzeug PyJWT # or in req.txt in the backend direc
 export SECRET_KEY=your-secret-key  # On Windows: set SECRET_KEY=your-secret-key # For JWT
 ```
 
-## Project Structure
-
-
-
-## API Endpoints
 
 ### Authentication
 
