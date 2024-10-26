@@ -21,34 +21,28 @@ A secure REST API built with Flask that provides todo list management with user 
 1. Clone the repository:
 ```bash
 git clone <repository-url>
-cd todo-api
+cd into it
 ```
 
 2. Create a virtual environment:
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
 ```
 
 3. Install dependencies:
 ```bash
-pip install flask flask-cors werkzeug PyJWT
+pip install flask flask-cors werkzeug PyJWT # or in req.txt in the backend directory
 ```
 
 4. Set up environment variables (optional):
 ```bash
-export SECRET_KEY=your-secret-key  # On Windows: set SECRET_KEY=your-secret-key # If you are going to use a sqldb 
+export SECRET_KEY=your-secret-key  # On Windows: set SECRET_KEY=your-secret-key # For JWT
 ```
 
 ## Project Structure
 
-```
-todo-api/
-├── app.py
-├── users.json
-├── todos.json
-└── README.md
-```
+
 
 ## API Endpoints
 
@@ -144,9 +138,10 @@ The API returns appropriate HTTP status codes:
 Start the development server:
 ```bash
 python app.py
+export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
-The API will be available at `http://localhost:5000`
+The API will be available at `http://localhost:5000` and the frontend on `http://localhost:3000`
 
 ## Development Mode
 
@@ -157,9 +152,4 @@ The application runs in debug mode by default when started directly. For product
 3. `export NODE_OPTIONS=--openssl-legacy-provider`
 
 ## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit changes
-4. Push to the branch
-5. Create a Pull Request
+Feel free to contribute!
