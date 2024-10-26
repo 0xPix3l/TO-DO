@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Admin User",
+    "username": "admin",
+    "password": "scrypt:32768:8:1$HQkWKtS7WEjboyDP$57af7afcb380fe072501298124328cdac4cce8ba4331397889dee6d121d6b5a4f8f13bffb2dd867f1f4f06b6306871a4ab489b345c11abc552f770214cfaf75a"
+  },
+  {
+    "id": 2,
+    "name": "ziad",
+    "username": "pixel",
+    "password": "scrypt:32768:8:1$VyStV52ZII1NHVfy$9fc18d221f560b86621d0b64774472659e3a7abf7604426fb5ba75fcb10f04c51a60f0bf9a28df3f2eeed3628eef946d987e0ce04bc552ab63816e22d869559d"
+  }
+]

@@ -1,0 +1,18 @@
+from flask_sqlalchemy import SQLAlchemy
+
+# Initialize db here without importing from app.py
+db = SQLAlchemy()
+
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), index=True)
+    username = db.Column(db.String(64), index=True, unique=True)
+    password = db.Column(db.String(128))
+    todos = db.relationship('Todo', backref='author', lazy='dynamic')
+
+class Todo(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String(200))
+    completed = db.Column(db.Boolean, default=False)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+
